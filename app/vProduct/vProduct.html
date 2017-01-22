@@ -1,0 +1,18 @@
+<div ng-controller="VProductCtrl">
+    <h1>ID : {{product.id}}</h1>
+    <dl class="dl-horizontal">
+        <dt>Name</dt>
+        <dd>{{product.name}}</dd>
+        <dt>Description</dt>
+        <dd>{{product.description}}</dd>
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>Available stock</dt>
+        <dd>{{product.stock.quantity}}</dd>
+    </dl>
+    <dl class="dl-horizontal">
+        <dt>Stocks</dt>
+        <dd>{{product.stocks.stocks}}</dd>
+    </dl>
+    <a class="button" href="#!/vProducts/edit/{{product.id}}">Edit</a>
+</div>

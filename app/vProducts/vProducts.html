@@ -1,0 +1,21 @@
+<div ng-controller="VProductsCtrl">
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody ng:repeat="p in products">
+            <tr>
+                <td><a href="#!/vProduct/{{p.id}}">{{p.id}}</a></td>
+                <td>{{p.name}}</td>
+                <td>{{p.description}}</td>
+                <td>
+                    <a class="btn btn-info" href="#!/vProducts/edit/{{p.id}}">Edit</a>
+                </td>   
+            </tr>
+        </tbody>
+    </table>
+</div>
