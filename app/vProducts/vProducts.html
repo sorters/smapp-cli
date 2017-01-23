@@ -5,6 +5,8 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th></th>
+                <th></th>
             </tr>
         </thead>
         <tbody ng:repeat="p in products">
@@ -14,6 +16,9 @@
                 <td>{{p.description}}</td>
                 <td>
                     <a class="btn btn-info" href="#!/vProducts/edit/{{p.id}}">Edit</a>
+                </td>
+                <td>
+                    <a class="btn btn-info" href="" onclick="return false;" ng-click="increase(p.id)">+1</a>
                 </td>   
             </tr>
         </tbody>

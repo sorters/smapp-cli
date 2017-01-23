@@ -1,4 +1,18 @@
-<p>This is the partial for view 2.</p>
-<p>
-  Showing of 'interpolate' filter:
-</p>
+<div ng-controller="VStocksCtrl">
+    <table class="table table-hover table-striped">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Product</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody ng:repeat="s in stocks">
+            <tr>
+                <td>{{s.id}}</td>
+                <td><a href="#!/vProduct/{{s.product_id}}">{{s.product_id}}</a></td>
+                <td>{{s.quantity}}</td> 
+            </tr>
+        </tbody>
+    </table>
+</div>

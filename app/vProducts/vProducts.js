@@ -18,5 +18,8 @@ angular.module('smapp.vProducts', ['ngRoute'])
             $scope.products = response.data;
         });
 
+    $scope.increase = function(pid) {
+        $http.post('http://smapp.sorters.io/api/v1/products/'+pid+'/refill/1', $scope.product);
+    }
 
 });

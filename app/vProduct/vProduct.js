@@ -30,7 +30,5 @@ angular.module('smapp.vProduct', ['ngRoute'])
                 }
             });
         });
-    
-
 
 });
